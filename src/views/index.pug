@@ -18,7 +18,7 @@ html(lang="es")
 					ul.menu
 						-const menus = ['Inicio', 'Sobre mi', 'Conocimiento', 'Proyecto', 'Contacto']
 						each menu in menus
-							li.menu__item: a(href=`${menu.toLowerCase().split(' ').join('-')}.html`).menu__link= menu
+							li.menu__item: a(href="#").menu__link= menu
 		.banner
 			.group
 				h1.banner__title Puri Dev
