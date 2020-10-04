@@ -1,0 +1,63 @@
+.study {
+	&__title {
+		text-align: center;
+		text-decoration: underline;
+		font-size: 2em;
+		@media screen and (min-width: 768px) {
+		}
+	}
+	&__card {
+		padding: 1rem;
+		border-radius: 0.5rem;
+		background-color: var(--bg-second);
+		box-shadow: rgba(156, 156, 156, 0.2) 0 5px 6px;
+		margin-bottom: 2rem;
+		height: 290px;
+		@media screen and (min-width: 768px) {
+			height: 320px;
+			flex: 48%;
+			margin-left: 2%;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		@media screen and (min-width: 1024px) {
+			height: 300px;
+			flex: 31.33%;
+			margin-left: 2%;
+		}
+	}
+	&__image {
+		text-align: center;
+	}
+	&__image img {
+		width: 20%;
+
+		@media screen and (min-width: 768px) {
+			width: 25%;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 35%;
+		}
+	}
+	&__subtitle,
+	&__description {
+		text-align: center;
+		margin: 0;
+		font-size: 1.02em;
+	}
+	&__subtitle {
+		font-size: 1.5em;
+		margin: 0.5em;
+	}
+	&__content {
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}

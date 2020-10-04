@@ -1,0 +1,53 @@
+$bg-second: var(--bg-second);
+$text-color: var(--text-color);
+
+.navegation {
+	position: fixed;
+	top: 3rem;
+	right: 0;
+	z-index: 100;
+	width: 80%;
+	transform: translateX(100%);
+	transition: transform 0.3s;
+	@media screen and (min-width: 768px) {
+		position: initial;
+		transform: translateX(0);
+		transition: transform 0;
+		width: 52%;
+		top: 0;
+	}
+}
+.menu {
+	height: 100vh;
+	background-color: $bg-second;
+	&__item {
+		border-bottom: 1px solid rgba(#eee, 0.3);
+		@media screen and (min-width: 768px) {
+			border-bottom: none;
+		}
+	}
+	&__link {
+		padding: 0 2rem;
+		display: block;
+		line-height: 3;
+		height: 3rem;
+		color: inherit;
+		@media screen and (min-width: 768px) {
+			padding: 0 0;
+			font-size: 1.02em;
+			letter-spacing: 0.5px;
+			&:hover {
+				text-decoration: underline;
+				color: var(--color);
+			}
+		}
+	}
+	&__show {
+		transform: translateX(0);
+	}
+	@media screen and (min-width: 768px) {
+		height: 3rem;
+		display: flex;
+		justify-content: space-between;
+	}
+}

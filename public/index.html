@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio - Puri</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="group">
+        <div class="logo"><a class="logo__link" href="#">Web</a></div>
+        <div class="toggle" id="toggle-menu">
+          <div class="toggle__menu"></div>
+        </div>
+        <nav class="navegation" id="navegation">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="inicio.html">Inicio</a></li>
+            <li class="menu__item"><a class="menu__link" href="sobre-mi.html">Sobre mi</a></li>
+            <li class="menu__item"><a class="menu__link" href="conocimiento.html">Conocimiento</a></li>
+            <li class="menu__item"><a class="menu__link" href="proyecto.html">Proyecto</a></li>
+            <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="group">
+        <h1 class="banner__title">Puri Dev</h1>
+        <p class="banner__paragraph">Desarrolla tu página web ya!</p>
+        <div class="banner__contact"><a class="banner__link" href="#">Contacto</a></div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="group">
+        <article class="sobre-mi">
+          <h2 class="sobre-mi__title">Sobre Mi</h2>
+          <div class="sobre-mi__card">
+            <div class="sobre-mi__picture"><img class="sobre-mi__image" src="assets/images/photo.jpg" alt=""></div>
+            <div class="sobre-mi__biography">
+              <p class="sobre-mi__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sit iure reprehenderit quam ab repellat explicabo repudiandae reiciendis perspiciatis saepe libero cum eaque modi!.</p>
+            </div>
+          </div>
+        </article>
+        <section class="study">
+          <h2 class="study__title">Conocimientos</h2>
+          <div class="study__content">
+            <div class="study__card">
+              <div class="study__image"><img src="assets/icons/html.svg" alt=""></div>
+              <div class="study__text">
+                <h3 class="study__subtitle">HTML 5</h3>
+                <p class="study__description">Conocimientos solidos en el lenguaje (Lenguaje de marcado) principal de la web.</p>
+              </div>
+            </div>
+            <div class="study__card">
+              <div class="study__image"><img src="assets/icons/css-3.svg" alt=""></div>
+              <div class="study__text">
+                <h3 class="study__subtitle">CSS3</h3>
+                <p class="study__description">Conocimientos no  tan solidos en el lenguaje que le da estilos a las páginas web.</p>
+              </div>
+            </div>
+            <div class="study__card">
+              <div class="study__image"><img src="assets/icons/javascript.svg" alt=""></div>
+              <div class="study__text">
+                <h3 class="study__subtitle">JAVASCRIPT</h3>
+                <p class="study__description">Aprendiendo el principal lenguaje de programacion para la web.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="project">
+          <h2 class="project__title">My projects</h2>
+          <div class="project__card">
+            <h3 class="project__subtitle">Tarjeta</h3>
+            <div class="project__content">
+              <div class="project__description">
+                <p>Tarjeta diseñado en <b>HTML:5</b> y <b>CSS3</b> con <b>flexbox</b></p>
+              </div>
+              <div class="project__image"><img src="assets/images/card.png" alt=""><a class="project__link project__link--mover" href="https://github.com/pedropurihuaman/Card-flexbox" target="_blank">Card</a></div>
+            </div>
+          </div>
+          <div class="project__card">
+            <h3 class="project__subtitle">Formulario</h3>
+            <div class="project__content">
+              <div class="project__description">
+                <p>Formulario diseñado en <b>HTML:5</b> y <b>CSS3</b> con <b>flexbox</b></p>
+              </div>
+              <div class="project__image"><img src="assets/images/formulario.png" alt=""><a class="project__link project__link--mover" href="https://github.com/pedropurihuaman/Formulario" target="_blank">Formulario</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="contact">
+          <h2 class="contact__title">Contacto</h2>
+          <div class="contact__form">
+            <form class="form" action="#">
+              <div class="form__names">
+                <div class="form__field">
+                  <label class="form__label" for="name">Nombre</label>
+                  <input class="form__input" type="text" id="name">
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="surname">Apellido</label>
+                  <input class="form__input" type="text" id="surname">
+                </div>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="email">Correo Electronico</label>
+                <input class="form__input" type="text" id="email">
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="asunto">Asunto</label>
+                <input class="form__input" type="text" id="asunto">
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="message">Mensaje</label>
+                <textarea class="form__textarea" id="message"></textarea>
+              </div>
+              <input class="form__submit" type="submit" value="Enviar">
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="group">
+        <p class="footer__autor">&copy; Pedro Purihuaman - 2020</p>
+        <div class="footer__networks"><a href="https://facebook.com/?lang=es" target="_blank"><img src="assets/icons/facebook.svg" alt=""></a><a href="https://twitter.com/?lang=es" target="_blank"><img src="assets/icons/twitter.svg" alt=""></a><a href="https://github.com" target="_blank"><img src="assets/icons/github.svg" alt=""></a></div>
+      </div>
+    </footer>
+    <script src="./js/menu-app.js"></script>
+  </body>
+</html>

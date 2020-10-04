@@ -1,0 +1,21 @@
+$text-color: var(--text-color);
+
+.toggle {
+	width: 2.5rem;
+	height: 3rem;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__menu {
+		width: 2.3rem;
+		height: 0.309rem;
+		background-color: $text-color;
+		border-radius: 0.5rem;
+		box-shadow: 0 9px $text-color, 0 -9px $text-color;
+	}
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}

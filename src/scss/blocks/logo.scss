@@ -1,0 +1,17 @@
+$font: var(--title-font);
+$color: var(--text-color);
+
+.logo {
+	&__link {
+		display: block;
+		line-height: 1.5;
+		height: 3rem;
+		padding: 0 2rem;
+		padding-left: 0;
+		font-size: 2rem;
+		font-family: $font;
+		font-weight: bold;
+		color: $color;
+		text-shadow: 0.8px 0.5px blue;
+	}
+}

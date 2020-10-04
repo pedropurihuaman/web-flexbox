@@ -1,0 +1,116 @@
+doctype
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Porfolio - Puri
+		link(rel="stylesheet", href="css/styles.css")
+	body
+		header.header
+			.group
+				.logo
+					a(href="#").logo__link Web
+
+				.toggle#toggle-menu
+					.toggle__menu
+
+				nav.navegation#navegation
+					ul.menu
+						-const menus = ['Inicio', 'Sobre mi', 'Conocimiento', 'Proyecto', 'Contacto']
+						each menu in menus
+							li.menu__item: a(href=`${menu.toLowerCase().split(' ').join('-')}.html`).menu__link= menu
+		.banner
+			.group
+				h1.banner__title Puri Dev
+				p.banner__paragraph Desarrolla tu página web ya!
+				.banner__contact
+					a(href="#").banner__link Contacto
+
+		main.main
+			.group
+				article.sobre-mi
+					h2.sobre-mi__title Sobre Mi
+					.sobre-mi__card
+						.sobre-mi__picture
+							img(src="assets/images/photo.jpg", alt="").sobre-mi__image
+						.sobre-mi__biography
+							p.sobre-mi__paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sit iure reprehenderit quam ab repellat explicabo repudiandae reiciendis perspiciatis saepe libero cum eaque modi!.
+
+				section.study
+					h2.study__title Conocimientos
+					.study__content
+						.study__card
+							.study__image
+								img(src="assets/icons/html.svg", alt="")
+							.study__text
+								h3.study__subtitle HTML 5
+								p.study__description Conocimientos solidos en el lenguaje (Lenguaje de marcado) principal de la web.
+
+						.study__card
+							.study__image
+								img(src="assets/icons/css-3.svg", alt="")
+							.study__text
+								h3.study__subtitle CSS3
+								p.study__description Conocimientos no  tan solidos en el lenguaje que le da estilos a las páginas web.
+
+						.study__card
+							.study__image
+								img(src="assets/icons/javascript.svg", alt="")
+							.study__text
+								h3.study__subtitle JAVASCRIPT
+								p.study__description Aprendiendo el principal lenguaje de programacion para la web.
+
+				section.project
+					h2.project__title My projects
+					.project__card
+						h3.project__subtitle Tarjeta
+						.project__content
+							.project__description
+								p Tarjeta diseñado en #[b HTML:5] y #[b CSS3] con #[b flexbox]
+							.project__image
+								img(src="assets/images/card.png", alt="")
+								a(href="https://github.com/pedropurihuaman/Card-flexbox" target="_blank").project__link.project__link--mover Card
+
+					.project__card
+						h3.project__subtitle Formulario
+						.project__content
+							.project__description
+								p Formulario diseñado en #[b HTML:5] y #[b CSS3] con #[b flexbox]
+							.project__image
+								img(src="assets/images/formulario.png", alt="")
+								a(href="https://github.com/pedropurihuaman/Formulario" target="_blank").project__link.project__link--mover Formulario
+
+				section.contact
+						h2.contact__title Contacto
+						.contact__form
+							form(action="#").form
+								.form__names
+									.form__field
+										label(for="name" class="form__label") Nombre
+										input(type="text" id="name" class="form__input")
+									.form__field
+										label(for="surname" class="form__label") Apellido
+										input(type="text" id="surname" class="form__input")
+								.form__field
+									label(for="email" class="form__label") Correo Electronico
+									input(type="text" id="email" class="form__input")
+								.form__field
+									label(for="asunto" class="form__label") Asunto
+									input(type="text" id="asunto" class="form__input")
+								.form__field
+									label(for="message" class="form__label") Mensaje
+									textarea(class="form__textarea",id="message")
+
+								input(type="submit", value="Enviar" class="form__submit")
+
+		footer.footer
+			.group
+				p.footer__autor &copy; Pedro Purihuaman - 2020
+				.footer__networks
+					a(href="https://facebook.com/?lang=es" target="_blank"): img(src="assets/icons/facebook.svg", alt="" )
+					a(href="https://twitter.com/?lang=es" target="_blank"): img(src="assets/icons/twitter.svg", alt=""  )
+					a(href="https://github.com" target="_blank"): img(src="assets/icons/github.svg", alt="")
+
+		script(src="./js/menu-app.js")
+
+		

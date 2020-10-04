@@ -1,0 +1,96 @@
+$color: var(--color);
+$hover: var(--color-hover);
+
+.project {
+	padding-top: 1rem;
+	text-align: center;
+	&__title {
+		font-size: 2em;
+		text-decoration: underline;
+		@media screen and (min-width: 1024px) {
+			width: 100%;
+		}
+	}
+	&__subtitle {
+		font-size: 1.2em;
+		margin-bottom: 0.5em;
+		@media screen and (min-width: 768px) {
+			font-size: 1.7em;
+		}
+	}
+	&__description p {
+		margin-top: 0;
+		@media screen and (min-width: 768px) {
+			margin-right: 1em;
+			font-size: 1.2em;
+		}
+	}
+	&__image img {
+		border-radius: 1rem;
+		max-height: 300px;
+		object-fit: cover;
+	}
+	&__link {
+		margin-top: 1rem;
+		display: block;
+		text-align: center;
+		width: 200px;
+		line-height: 2.5;
+		padding: 0 1.3rem;
+		border-radius: 2rem;
+		background-color: $color;
+		margin-left: auto;
+		margin-right: auto;
+		color: inherit;
+		transition: background-color 0.2s;
+		&:after {
+			content: '\27A4';
+			margin-left: 0.5rem;
+			font-size: 1.1em;
+		}
+		&:hover {
+			background-color: $hover;
+		}
+		&:active {
+			transform: scale(0.95);
+		}
+		&--mover {
+			@media screen and (min-width: 768px) {
+				position: absolute;
+				left: 0;
+				bottom: 2em;
+			}
+			@media screen and (min-width: 1024px) {
+				position: static;
+			}
+		}
+	}
+	&__content {
+		@media screen and (min-width: 768px) {
+			display: flex;
+			align-items: center;
+			flex: 48%;
+			margin-left: 2%;
+			position: relative;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		@media screen and (min-width: 1024px) {
+			display: initial;
+		}
+	}
+	&__card {
+		@media screen and (min-width: 1024px) {
+			flex: 46%;
+			margin-left: 2%;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

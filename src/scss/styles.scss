@@ -1,0 +1,18 @@
+// Estilos base
+@import 'base/normalize.scss';
+@import 'base/base.scss';
+
+// Variable
+@import 'config/variables.scss';
+
+// Otros estilos - Blocks
+@import 'blocks/header.scss';
+@import 'blocks/logo.scss';
+@import 'blocks/toggle.scss';
+@import 'blocks/menu.scss';
+@import 'blocks/banner.scss';
+@import 'blocks/sobre-mi.scss';
+@import 'blocks/project.scss';
+@import 'blocks/contact.scss';
+@import 'blocks/study.scss';
+@import 'blocks/footer.scss';

@@ -1,0 +1,14 @@
+$bg-second: var(--bg-second);
+
+.header {
+	position: fixed;
+	background: $bg-second;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	& .group {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
